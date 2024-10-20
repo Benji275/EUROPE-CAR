@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europe Cars</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Europe Cars</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Car Listings</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="map-section">
+      <h2>Select a Country to View Cars</h2>
+      <div id="map"></div>
+    </section>
+
+    <section class="info-section">
+      <div id="car-listings">
+        <h2>Available Cars</h2>
+        <div id="cars"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Europe Cars. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

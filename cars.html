@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europe Cars - Listings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Europe Cars</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Car Listings</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="car-filter">
+      <h2>Filter Cars</h2>
+      <form id="filter-form">
+        <label for="country">Country:</label>
+        <select id="country">
+          <option value="all">All</option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+          <option value="Italy">Italy</option>
+        </select>
+
+        <label for="car-type">Type:</label>
+        <select id="car-type">
+          <option value="all">All</option>
+          <option value="SUV">SUV</option>
+          <option value="Sedan">Sedan</option>
+          <option value="Hatchback">Hatchback</option>
+        </select>
+
+        <label for="price-range">Price Range (€):</label>
+        <input type="range" id="price-range" min="5000" max="200000" step="5000" value="50000">
+        <span id="price-value">€50,000</span>
+
+        <button type="submit">Apply Filters</button>
+      </form>
+    </section>
+
+    <section class="car-listings">
+      <h2>Available Cars</h2>
+      <div id="filtered-cars"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Europe Cars. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
